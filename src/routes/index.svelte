@@ -30,6 +30,7 @@
             }),
         });
         const data = await res.json();
+        console.log("data", data);
         loading = false;
         if (data?.element_count) { 
             asteroidAmount = data.element_count;
