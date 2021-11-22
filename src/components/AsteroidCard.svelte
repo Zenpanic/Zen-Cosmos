@@ -6,7 +6,7 @@
     <h3  class="asteroidName">{asteroid.name}</h3>
    <div class="questionContainer">
         <div class="questionElement">
-            <p class="question">Does it have a chance to hit us?</p>
+            <p class="question">Is it potentially dangerous?</p>
             <p class="answer"><span class="value">{asteroid.is_potentially_hazardous_asteroid ? "Yep" : "Nope"}</span></p>
         </div>
         <div class="questionElement">
@@ -33,7 +33,8 @@
         text-align: center;
         margin-bottom: 2rem;
         font-size: 1.5rem;
-        color: #9E50BF;
+        /* color: #9E50BF; */
+        color: #de97fd;
     }
 
     .globalContainer {

@@ -10,7 +10,7 @@
     };
 </script>
 
-<main>
+<article>
     <nav>
         {#each asteroids as asteroid, index (asteroid.id)}
             {#if index === pickedAsteroid}
@@ -21,17 +21,17 @@
         {/each}
     </nav>
     <AsteroidCard asteroid={asteroids[pickedAsteroid]} />
-</main>
+</article>
 
 
 
 <style>
-    main {
+    article {
         margin: 4rem auto;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     nav {

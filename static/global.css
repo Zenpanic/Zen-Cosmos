@@ -10,10 +10,14 @@ html, body {
 
 h1, h2, h3, li, p {
     color: white;
-    font-family: 'Courier New', Courier, monospace;
     line-height: 1.5em;
+}
+
+h1, h2, h3 {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 p, li {
     font-size: 1.3rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
