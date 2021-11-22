@@ -70,6 +70,10 @@
     
 </main>
 
+<footer>
+    <p class="footerText">Built by <a href="https://zentown.dev" class="linkout">ZenTown</a> - Powered by the <a href="https://api.nasa.gov/" class="linkout">NASA API</a></p>
+</footer>
+
 <style>
     .backgroundImage {
         width: 100%;
@@ -169,4 +173,22 @@
         color: darkgrey;
         cursor:not-allowed;
     }
+
+    footer {
+        margin: 1rem auto;
+        padding: 0 0.5rem;
+    }
+
+    .footerText {
+        font-size: smaller;
+        text-align: center;
+        color: #cd59ff;
+    }
+
+    .linkout, .linkout:visited, .linkout:active {
+        font-size: small;
+        color: gold;
+        font-weight: 600;
+    }
+
 </style>

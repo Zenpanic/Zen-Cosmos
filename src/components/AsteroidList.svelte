@@ -8,6 +8,16 @@
     const changePicked = index => {
         pickedAsteroid = index;
     };
+
+    const movePrevious = () => {
+        if (pickedAsteroid <= 0) return;
+        pickedAsteroid -= 1;
+    };
+
+    const moveNext = () => {
+        if (pickedAsteroid >= asteroids.length - 1) return;
+        pickedAsteroid += 1;
+    };
 </script>
 
 <article>
@@ -21,6 +31,11 @@
         {/each}
     </nav>
     <AsteroidCard asteroid={asteroids[pickedAsteroid]} />
+
+    <div class="navNext">
+        <p class="navArrow" on:click={movePrevious}>Previous</p>
+        <p class="navArrow" on:click={moveNext}>Next</p>
+    </div>
 </article>
 
 
@@ -36,6 +51,31 @@
 
     nav {
         margin-bottom: 3rem;
+    }
+
+    .navNext {
+        display: none;
+    }
+
+    @media screen and (max-width: 1024px) {
+        nav {
+            margin-bottom: 0.5rem;
+        }
+        .navNext {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navArrow {
+            margin: 0 1rem;
+            text-align: center;
+            width: 85px;
+            cursor: pointer;
+            text-decoration: underline;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
     }
 
     .asteroidPic {
