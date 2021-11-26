@@ -89,7 +89,9 @@
     header {
         margin: 2rem auto;
         text-align: center;
-        padding: 1rem;
+        padding: 1rem;  
+        max-width: 900px;
+        border-bottom: 5px solid whitesmoke;
     }
 
     .mainTitle, .mainSubTitle {
